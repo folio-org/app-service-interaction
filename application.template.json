@@ -1,0 +1,27 @@
+{
+    "name": "${project.name}",
+    "version": "${project.version}",
+    "description": "${project.description}",
+    "platform": "complete",
+    "dependencies": [
+      {
+        "name": "app-platform-minimal",
+        "version": "^2.1.0-SNAPSHOT",
+        "preRelease": "only"
+      }
+    ],
+    "modules": [
+      {
+        "name": "mod-service-interaction",
+        "version": "latest",
+        "preRelease": "only"
+      }
+    ],
+    "uiModules": [
+      {
+        "name": "folio_service-interaction",
+        "version": "latest",
+        "preRelease": "only"
+      }
+    ]
+  }
