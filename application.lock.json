@@ -1,6 +1,6 @@
 {
   "name": "app-service-interaction",
-  "version": "1.0.0-SNAPSHOT.100200000001562",
+  "version": "1.0.0-SNAPSHOT.100200000001755",
   "description": "Application descriptor for the FOLIO Agreements application",
   "platform": "complete",
   "dependencies": [
@@ -18,7 +18,7 @@
   "uiModules": [
     {
       "name": "folio_service-interaction",
-      "version": "4.1.1099000000000252"
+      "version": "4.1.1099000000000258"
     }
   ]
 }
