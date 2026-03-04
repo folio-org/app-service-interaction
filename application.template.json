@@ -13,7 +13,7 @@
     "modules": [
       {
         "name": "mod-service-interaction",
-        "version": "latest",
+        "version": "4.3.0-SNAPSHOT.151",
         "preRelease": "only"
       }
     ],
