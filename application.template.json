@@ -1,27 +1,27 @@
 {
-    "name": "${project.name}",
-    "version": "${project.version}",
-    "description": "${project.description}",
-    "platform": "complete",
-    "dependencies": [
-      {
-        "name": "app-platform-minimal",
-        "version": "^2.1.0-SNAPSHOT",
-        "preRelease": "only"
-      }
-    ],
-    "modules": [
-      {
-        "name": "mod-service-interaction",
-        "version": "4.3.0-SNAPSHOT.151",
-        "preRelease": "only"
-      }
-    ],
-    "uiModules": [
-      {
-        "name": "folio_service-interaction",
-        "version": "latest",
-        "preRelease": "only"
-      }
-    ]
-  }
+  "name": "${project.name}",
+  "version": "${project.version}",
+  "description": "${project.description}",
+  "platform": "complete",
+  "dependencies": [
+    {
+      "name": "app-platform-minimal",
+      "version": "^VERSION_^2.1.0-SNAPSHOT",
+      "preRelease": "false"
+    }
+  ],
+  "modules": [
+    {
+      "name": "mod-service-interaction",
+      "version": "^VERSION_4.3.0-SNAPSHOT.151",
+      "preRelease": "false"
+    }
+  ],
+  "uiModules": [
+    {
+      "name": "folio_service-interaction",
+      "version": "^VERSION_latest",
+      "preRelease": "false"
+    }
+  ]
+}
