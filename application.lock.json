@@ -1,12 +1,12 @@
 {
-  "id" : "app-service-interaction-1.1.0-SNAPSHOT.100200000010665",
+  "id" : "app-service-interaction-1.1.0-SNAPSHOT.100200000010702",
   "name" : "app-service-interaction",
-  "version" : "1.1.0-SNAPSHOT.100200000010665",
+  "version" : "1.1.0-SNAPSHOT.100200000010702",
   "description" : "Application descriptor for the FOLIO Agreements application",
   "modules" : [ {
-    "id" : "mod-service-interaction-4.3.0-SNAPSHOT.151",
+    "id" : "mod-service-interaction-4.4.0-SNAPSHOT.168",
     "name" : "mod-service-interaction",
-    "version" : "4.3.0-SNAPSHOT.151"
+    "version" : "4.4.0-SNAPSHOT.168"
   } ],
   "uiModules" : [ {
     "id" : "folio_service-interaction-4.2.1099000000000396",
@@ -19,7 +19,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-service-interaction-4.3.0-SNAPSHOT.151",
+    "id" : "mod-service-interaction-4.4.0-SNAPSHOT.168",
     "name" : "mod-service-interaction",
     "requires" : [ {
       "id" : "okapi",
@@ -27,7 +27,7 @@
     } ],
     "provides" : [ {
       "id" : "servint",
-      "version" : "4.3",
+      "version" : "4.4",
       "handlers" : [ {
         "methods" : [ "GET" ],
         "pathPattern" : "/servint/settings*",
@@ -241,6 +241,21 @@
         "pathPattern" : "/_/tenant/disable",
         "permissionsRequired" : [ ]
       } ]
+    }, {
+      "id" : "_timer",
+      "version" : "1.0",
+      "interfaceType" : "system",
+      "handlers" : [ {
+        "methods" : [ "POST" ],
+        "pathPattern" : "/servint/numberGenerators/resetYearSequences",
+        "unit" : "hour",
+        "delay" : "24",
+        "permissionsRequired" : [ ]
+      } ]
+    } ],
+    "optional" : [ {
+      "id" : "dashboard",
+      "version" : "1.0"
     } ],
     "permissionSets" : [ {
       "permissionName" : "servint.extsvc.get",
@@ -529,7 +544,7 @@
       "subPermissions" : [ "servint.extsvc.get" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-service-interaction:4.3.0-SNAPSHOT.151",
+      "dockerImage" : "folioci/mod-service-interaction:4.4.0-SNAPSHOT.168",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
