@@ -1,7 +1,7 @@
 {
-  "id" : "app-service-interaction-1.1.0-SNAPSHOT.100200000010702",
+  "id" : "app-service-interaction-1.1.0-SNAPSHOT.100200000010785",
   "name" : "app-service-interaction",
-  "version" : "1.1.0-SNAPSHOT.100200000010702",
+  "version" : "1.1.0-SNAPSHOT.100200000010785",
   "description" : "Application descriptor for the FOLIO Agreements application",
   "modules" : [ {
     "id" : "mod-service-interaction-4.4.0-SNAPSHOT.168",
@@ -9,9 +9,9 @@
     "version" : "4.4.0-SNAPSHOT.168"
   } ],
   "uiModules" : [ {
-    "id" : "folio_service-interaction-4.2.1099000000000396",
+    "id" : "folio_service-interaction-4.2.1099000000000399",
     "name" : "folio_service-interaction",
-    "version" : "4.2.1099000000000396"
+    "version" : "4.2.1099000000000399"
   } ],
   "dependencies" : [ {
     "name" : "app-platform-minimal",
@@ -563,7 +563,7 @@
     }
   } ],
   "uiModuleDescriptors" : [ {
-    "id" : "folio_service-interaction-4.2.1099000000000396",
+    "id" : "folio_service-interaction-4.2.1099000000000399",
     "name" : "FOLIO app for service-interaction",
     "requires" : [ {
       "id" : "servint",
